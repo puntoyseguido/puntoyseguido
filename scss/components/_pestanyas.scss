@@ -1,0 +1,74 @@
+.box-perfil {
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+.menu-interior {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    background-color: #00A6A5;
+}
+
+.menu-interior ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.pestanyas {
+    float: left;
+}
+
+.pestanyas a{
+    color:white;
+    text-decoration: none;
+    background-color: #00A6A5;
+    padding: 20px 15px;
+    display:block;
+}
+
+.pestanyas a:hover,
+.pestanyas a.seleccionado {
+    background-color: white;
+    text-decoration: none;
+    color: #00A6A5;
+}
+
+.contenido-perfil{
+    margin: 5px 5px 1px 14px;
+}
+
+.option-2,
+.option-3,
+.option-4,
+.option-5,
+.option-6,
+.option-no-leido,
+.option-enviado,
+ {
+    display: none;
+}
+
+.ul-mensajes{
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.contenido-mensaje{
+    list-style: none;
+    text-decoration: none;
+    background-color: white;
+    padding: 16px 10px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    &:last-child{
+        border-bottom: none;
+    }
+}
+
+.contenido-mensaje:hover,
+.seleccionado-m {
+    background-color: rgb(240, 240, 240);
+}

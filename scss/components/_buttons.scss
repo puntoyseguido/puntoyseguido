@@ -1,0 +1,171 @@
+.boton-margen {
+    margin-bottom: 10px;
+}
+
+.general-button{
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.general-button:hover{
+    opacity: 0.8;
+}
+
+.full-button{
+    display:block;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.large-button{
+    display:block;
+    width: 80%;
+    padding: 20px 10px;
+    margin: 0 0 10px;
+}
+
+.medium-button{
+    width: 25%;
+}
+
+.small-button{
+    width: 8%;
+}
+
+.button-1{
+    background-color:#00A6A5;
+}
+
+.button-2{
+    background-color:#f15c22;
+}
+
+.button-mail{
+    background-color:#f15c22;
+    transition: all 0.3s ease;
+}
+
+.button-3{
+    border: 2px solid #f15c22;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.button-1,
+.button-2,
+.button-3 {
+    @extend .general-button;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.button-1,
+.button-2,
+.button-3,
+.button-mail,
+.button-unete{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.button-1 span,
+.button-2 span,
+.button-3 span{
+    padding: 0 40px;
+}
+
+.button-1 span,
+.button-2 span,
+.button-mail span{
+    color:white;
+}
+
+.button-3 span{
+    color:#f15c22;
+}
+
+
+.button-mail {
+    position: absolute;
+    margin:auto;
+    left:0;
+    right:0;
+    bottom:-15px;
+    width: 50%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    height: 30px;
+    border:none;
+    text-align: center;
+
+    span{
+        background-image:url(../imagenes/mail-b.svg);
+        background-position: center center;
+        background-repeat:no-repeat;
+        background-size: contain;
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+    &.mail-alumnos {
+        text-align: center;
+
+        span {
+            width: 105px;
+            text-align: right;
+            background-position: left center;
+            height: 20px;
+            background-size: 16% auto;
+
+            strong {
+                line-height: 20px;
+                font-weight: normal;
+            }
+        }
+    }
+
+}
+
+
+.button-mail:hover{
+    background-color:#404041;
+}
+
+.button-unete{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0;
+    height: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 13px;
+}
+
+.button-unete span{
+    color: #404041;
+}
+
+.button-unete:hover{
+    background-color:#f15c22;
+}
+
+
+.mail-cursos{
+    background-image:url(../imagenes/mail-b.svg);
+    background-position: center;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+
+

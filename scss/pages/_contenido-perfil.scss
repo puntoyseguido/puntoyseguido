@@ -1,0 +1,165 @@
+.parte-derecha{
+    float: right;
+    margin: 50px 0 0 40px;
+}
+
+.iconos-perfil{
+    float: left;
+    margin-right: 10px;
+}
+
+.contenido{
+    float: left;
+    width: 86%;
+}
+
+.bloque-perfil{
+    margin-top: 40px;
+}
+
+.lista-programas {
+    padding-left: 0px;
+}
+
+.celdas-programas {
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.celdas-programas-final{
+    @extend .celdas-programas;
+    padding-right: 20px;
+    width: 20%;
+}
+
+.no-float {
+    float:none;
+}
+
+.foto-trabajo {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 30%;
+}
+
+.descripcion-mi-perfil {
+    padding-top: 20px;
+}
+
+.no-cursos-cuadrado{
+    border: 1px solid #54c4c7;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    width: 90%;
+}
+
+.contenido-no-cursos{
+    margin-top:30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.texto-valoraciones{
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: top;
+    width: 70%;
+}
+
+.imagen-valoraciones{
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 15%;
+}
+
+.mensaje-contenido{
+    display: inline-block;
+    width: 68%;
+}
+
+.imagen-mensaje{
+    float: left;
+    margin: 10px;
+    width: 18%;
+}
+
+.texto-mensaje{
+    float: left;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.mensaje{
+    clear:both;
+    position: relative;
+}
+
+.mensaje-no-leido {
+    @extend .mensaje;
+    background-color: rgb(240, 240, 240);
+    border-bottom: white 2px solid;
+}
+
+.mensaje-leido {
+    @extend .mensaje;
+    border: rgb(240, 240, 240) 1px solid;
+    border-width: 0 1px 1px 1px;
+}
+.mensaje-leido-primero {
+    @extend .mensaje-leido;
+    border-width: 1px;
+}
+
+.mensaje-desplegado {
+    display:none;
+}
+
+.margenes-valoraciones {
+    margin-top: 0;
+}
+
+.anuncio-perfil{
+    border: 2px solid rgba(51, 51, 51, 0.15);
+    float: left;
+    margin: 0 20px 30px 0;
+    position: relative;
+    width: 45%;
+}
+
+.anuncio-perfil-propio{
+    @extend .anuncio-perfil;
+    position: relative;
+}
+
+.programas-mas{
+    padding-top: 20px;
+}
+
+.aviso-nuevo-usuario{
+    border: 2px solid #00A6A5;
+    border-radius: 5px;
+    width: 90%;
+    margin: 100px 40px 40px 40px;
+    padding: 50px;
+    position: relative;
+}
+
+.munyeco-nuevo-usuario {
+    position: absolute;
+    top: -87px;
+    left: 40%;
+}
+
+.imagen-munyeco {
+    width: 100px;
+}

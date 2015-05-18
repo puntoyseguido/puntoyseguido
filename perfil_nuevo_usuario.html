@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+  <header class="cf">
+        <div class="logo">
+            <a href="index.html">
+                <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
+            </a>
+        </div>
+        <nav class="menu cf">
+            <div class="float-menu">
+                <ul class="esconder">
+                    <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
+                    <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
+                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="registro">
+                    <ul class="esconder">
+                        <li><a href="#login">Log in</a></li>
+                        <li><a href="#registro">Regístrate</a></li>
+                    </ul>
+                </div>
+                <div class="lupa-buscador">
+                    <div class="dropdown__wrap">
+                        <a href="#">
+                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
+                        </a>
+                        <ul class="dropdown">
+                            <li class="alineacion_vertical">
+                                <a href="#">Encuentra tu curso</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Busca tu alumno</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">¿Cómo funciona?</a>
+                            </li>
+                            <li class="alineacion_vertical">
+                                <a href="#">Mi perfil</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a id="abrir" href="">
+                        <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="buscador-desplegado cf">
+            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
+            <div class="buscador-container-derecha cf">
+                <div class="container-button-buscador left">
+                    <a class="button-2 full-button type-color-3" href="buscador.html">Buscar</a>
+                </div>
+                <a id="cerrar" href="">
+                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+<div class="background-4">
+    <div class="container tabla margin-top">
+        <div class="parte-izquierda cell-tabla">
+                <div class="centrado opacity-hover">
+                    <div>
+                        <img class="img-perfil imagen-redondo" src="imagenes/alumno-28-buscador.jpg" alt="imagen del usuario">
+                    </div>
+                    <span class="type-color-2 margin-top">Sube tu foto</span>
+                </div>
+                <div>
+                    <p class="secondary-subtitle block margin-top centrado">280px x 280px. Máximo 30 Kb</p>
+                </div>
+
+               <div class="informacion-persona">
+                    <div>
+                        <h1 class="profile-name left">
+                            Silvia Terreiz
+                        </h1>
+                        <span class="lapiz icono-editar-margen opacity-hover left"></span>
+                    </div>
+                    <div class="clear">
+                        <p> <span class="type-color-1 light">Status:</span></p>
+                        <p> <span class="type-color-1 light">Categoría:</span></p>
+                        <p> <span class="type-color-1 light">Edad:</span></p>
+                    </div>
+                </div>
+
+                <a class="button-2 boton-margen large-button type-color-3" href="#contactar">Publica tu curso</a>
+                <p class="programas-mas"> ¡Aquí podrás publicar la clase que necesitas! </p>
+                <a class="button-3 type-color-2 large-button" href="#valorar">Publica tu duda</a>
+        </div>
+
+        <div class="box-perfil cell-tabla cf">
+            <nav class="menu-interior">
+                <ul class="cf">
+                        <li class="pestanyas"><a class="pestanya-1 seleccionado" href="#option-1">Sobre Mi</a></li>
+                        <li class="pestanyas"><a class="pestanya-2" href="#option-2">Portafolio</a></li>
+                        <li class="pestanyas"><a class="pestanya-3" href="#option-3">Cursos</a></li>
+                        <li class="pestanyas"><a class="pestanya-4" href="#option-4">Dudas</a></li>
+                        <li class="pestanyas"><a class="pestanya-5" href="#option-5">Valoraciones</a></li>
+                        <li class="pestanyas"><a class="pestanya-6" href="#option-6">Mensajería</a></li>
+                </ul>
+            </nav>
+            <section id="option-1" class="contenido-perfil option-1">
+                <article class="bloque-perfil cf">
+                    <span class="icono-perfil icono-rectangular-grande left"> </span>
+                    <div class="contenido">
+                            <div>
+                                <h2 class="secondary-title left">
+                                    Mi Perfil
+                                </h2>
+                                <span class="lapiz icono-editar opacity-hover left"></span>
+                                <p class="secondary-subtitle margin-top clear  clear">Añade una descripción que te defina y que muestre tus habilidades.</p>
+                            </div>
+                            <div class="descripcion-mi-perfil cf">
+                                <textarea id="input-sobre-mi" class="padding-bottom" name="message" rows="4" placeholder="Preséntate y explícanos que puedes aportar y que quieres conseguir de puntoyseguido"></textarea>
+                            </div>
+                     </div>
+                </article>
+                <article class="bloque-perfil cf">
+                    <span class="icono-disponibilidad icono-rectangular-grande left"> </span>
+                    <div class="contenido">
+                        <div>
+                            <h2 class="secondary-title left">
+                                Disponibilidad
+                            </h2>
+                            <span class="lapiz icono-editar opacity-hover left"></span>
+                            <p class="secondary-subtitle margin-top clear">Indica tu disponibilidad a lo largo de la semana</p>
+                        </div>
+                        <div class="descripcion-mi-perfil">
+                            <table class="sg-margin-auto">
+                                <tr>
+                                    <th></th>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                    <th>Sábado</th>
+                                    <th>Domingo</th>
+                                </tr>
+                                <tr>
+                                  <td class="title-table">Mañana</td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                   <td>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                       <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla manana-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla manana opacity-hover"></span>
+                                    </td>
+                                </tr>
+                                <tr class="second-td">
+                                    <td class="title-table second-td">Tarde</td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
+                                   <td class="second-td">
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                       <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
+                                    <td class="second-td">
+                                        <span class="icono-tabla-off icono-tabla tarde-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla tarde opacity-hover"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="title-table">Noche</td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
+                                   <td>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                       <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
+                                    <td>
+                                        <span class="icono-tabla-off icono-tabla noche-off opacity-hover"></span>
+                                        <span class="icono-tabla-on icono-tabla noche opacity-hover"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+                <article class="bloque-perfil cf">
+                    <span class="icono-programas icono-rectangular-grande left margin-top"> </span>
+                    <div class="contenido">
+                        <div class="titulo-perfil">
+                            <h2 class="secondary-title left">
+                            Programas informáticos
+                            </h2>
+                            <span class="lapiz icono-editar opacity-hover left"></span>
+                           <p class="secondary-subtitle margin-top clear"> Añade tus programas y indica en que grado los controlas</p>
+                        </div>
+                        <div class="descripcion-mi-perfil">
+                            <ul class="lista-programas no-margin">
+                                <li class="celdas-programas"> Programa </li>
+                                <li class="celdas-programas"> <input type="text" id="input-programas" placeholder="Ej: Photoshop" name="buscador"></li>
+                                <li class="celdas-programas"> Nivel</li>
+                                <li class="celdas-programas nivel0 icono-conocimientos">
+                                </li>
+                            </ul>
+
+                            <ul class="lista-programas">
+                                <li class="celdas-programas clear"> Programa </li>
+                                <li class="celdas-programas"> <input type="text" id="input-programas" placeholder="Ej: Wordpress" name="buscador"></li>
+                                <li class="celdas-programas"> Nivel</li>
+                                <li class="celdas-programas nivel0 icono-conocimientos">
+                                </li>
+                            </ul>
+                            <p class="type-color-2 opacity-hover programas-mas clear">Añadir programa</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="option-2" class="contenido-perfil option-2">
+                <article class="bloque-perfil cf">
+                   <span class="icono-portafolio icono-rectangular-grande left"> </span>
+                    <div class="contenido">
+                        <div>
+                            <h2 class="secondary-title left">
+                                Portafolio
+                            </h2>
+                            <span class="lapiz icono-editar opacity-hover left"></span>
+                            <p class="secondary-subtitle margin-top clear">Añade las diferentes plataformas en las que se puedan ver tus trabajos.</p>
+                            <p class="secondary-subtitle">¡Ayudará a que conozcan mas de ti y dará visibildad a tus proyectos!</p>
+                        </div>
+                        <div class="descripcion-mi-perfil">
+                            <div>
+                                <div class="icono-rectangular portafolio-behance-c left"> </div>
+                                <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-domestika-c left"> </div>
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-linkedin-c left"> </div>
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-tumblert-c left"> </div>
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-instagram-c left"> </div>
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                            <div>
+                            <div class="icono-rectangular portafolio-pinterest-c left"> </div>
+                            <input type="text" id="input-portafolio" placeholder="http://..." name="buscador">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="bloque-perfil cf">
+                    <span class="icono-imagenes icono-rectangular-grande left"> </span>
+                    <div class="contenido">
+                        <div>
+                            <h2 class="secondary-title left">
+                                Galería de imágenes
+                            </h2>
+                            <span class="lapiz icono-editar opacity-hover left"></span>
+                        </div>
+                        <div class="descripcion-mi-perfil clear">
+                            <div class="foto-trabajo">
+                                <img src="imagenes/anuncio-31.jpg" alt="imagen de puntoyseguido">
+                            </div>
+                            <div class="foto-trabajo">
+                                <img src="imagenes/anuncio-32.jpg" alt="imagen de puntoyseguido">
+                            </div>
+                            <div class="foto-trabajo opacity-hover">
+                                <img src="imagenes/anuncio-30.jpg" alt="añadir más imágenes">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="option-3" class="contenido-perfil option-3">
+                <article class="bloque-perfil cf">
+                    <span class="icono-perfil icono-rectangular-grande left"> </span>
+                    <div class="contenido">
+                        <div class="titulo-perfil">
+                            <h2 class="secondary-title">
+                                Cursos
+                            </h2>
+                            <p class="secondary-subtitle margin-top">Borra los cursos que están desactualizados.¡Así evitarás recibir mensajes no deseados!
+                            </p>
+                            <p class="secondary-subtitle">
+                            </p>
+                        </div>
+                    <div class="descripcion-mi-perfil">
+                    <div class="aviso-nuevo-usuario">
+                        <div class="munyeco-nuevo-usuario">
+                            <img class="imagen-munyeco" src="imagenes/muneco-consejos.png" alt="Muñeco decorativo">
+                        </div>
+                        <h3 class="titulo-nuevo-usuario centrado type-color-1 no-margin">¡Aún no has publicado ningun curso!
+                        </h3>
+                        <p>Puedes empezar publicando cursos sobre programas informáticos que domines, explicando en qué podrás ayudar a los otros creativos.
+                        </p>
+                        <div class="margin-auto">
+                        <a class="button-2 margin-top type-color-3 publicar-curso margin-auto" href="#"><span>Publica tu curso</span></a>
+                        </div>
+                </div>
+                       </div>
+                   </div>
+               </article>
+           </section>
+    <section id="option-4" class="contenido-perfil option-4">
+        <article class="bloque-perfil cf">
+                    <span class="icono-dudas icono-rectangular-grande left"> </span>
+                        <div class="contenido">
+                            <div>
+                                <h2 class="secondary-title">
+                                    Dudas
+                                </h2>
+                                <p class="secondary-subtitle margin-top">Borra las dudas que ya estén resueltas. ¡Así evitarás recibir mensajes no deseados!</p>
+                            </div>
+                            <div class="descripcion-mi-perfil">
+                    <div class="aviso-nuevo-usuario">
+                        <div class="munyeco-nuevo-usuario">
+                            <img class="imagen-munyeco" src="imagenes/muneco-consejos.png" alt="Muñeco decorativo">
+                        </div>
+                        <h3 class="titulo-nuevo-usuario centrado type-color-1 no-margin">¡Aún no has publicado ninguna duda!
+                        </h3>
+                        <p>Publica todas aquellas dudas que tengas sobre programas informáticos para que otros creativos lo vean y te ayuden.
+                        </p>
+                        <div class="margin-auto">
+                        <a class="button-2 margin-top type-color-3 publicar-curso margin-auto" href="#"><span>Publica tu duda</span></a>
+                        </div>
+                </div>
+                           </div>
+                       </div>
+                   </article>
+    </section>
+    <section id="option-5" class="contenido-perfil option-5">
+        <article class="bloque-perfil cf">
+            <span class="icono-valoraciones icono-rectangular-grande left"> </span>
+            <div class="contenido">
+                <div>
+                    <h2 class="secondary-title">
+                        Valoraciones
+                    </h2>
+                    <p class="secondary-subtitle margin-top">Visualiza tus valoraciones, y compártelas con tus redes sociales.</p>
+                </div>
+                <div class="descripcion-mi-perfil">
+                    <div class="aviso-nuevo-usuario">
+                        <div class="munyeco-nuevo-usuario">
+                            <img class="imagen-munyeco" src="imagenes/muneco-consejos.png" alt="Muñeco decorativo">
+                        </div>
+                        <h3 class="titulo-nuevo-usuario centrado type-color-1 no-margin">¡Aún nadie te ha valorado!
+                        </h3>
+                        <p>Puedes empezar valorando a los creativos que te han enseñado o a quienes has ayudado. Ya verás cómo rápidamente también te valoran a ti.
+                        </p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="option-6" class="contenido-perfil option-6">
+        <article class="bloque-perfil cf">
+            <span class="icono-mensaje icono-rectangular-grande left"> </span>
+            <div class="contenido">
+                <div>
+                    <h2 class="secondary-title">
+                        Mis mensajes
+                    </h2>
+                    <p class="secondary-subtitle margin-top">Aquí podrás visualizar tus mensajes y contactar con otros creativos.</p>
+                </div>
+                <div class="descripcion-mi-perfil">
+                    <nav class="menu-mensajes left">
+                        <ul class="ul-mensajes cf">
+                            <li class="contenido-mensaje seleccionado-m pestanya-m-recibido"><a class="type-color-5" href="#option-recibido">1 mensaje recibido</a></li>
+                            <li class="contenido-mensaje pestanya-m-no-leido"><a class="type-color-5" href="#option-no-leido">1 mensaje no leído</a></li>
+                            <li class="contenido-mensaje pestanya-m-enviado"><a class="type-color-5" href="#option-enviado">0 mensajes enviados</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mensaje-contenido left">
+                        <section id="option-recibido" class="option-recibido">
+                            <div class="mensaje-no-leido opacity:hover cf">
+                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                                </div>
+                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-29-buscador.jpg" alt="imagen del usuario">
+                                <div class="texto-mensaje">
+                                    <p class=""><span class="type-color-1 light">De: </span>Puntoyseguido</p>
+                                    <p class=" no-margin secondary-subtitle"> <span class="type-color-2">Bienvenido a la comunidad de Puntoyseguido!</span> Aquí encontrarás los mensajes de los creativos que quieren contactar contigo! Así que... estate atento!
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="option-no-leido" class="option-no-leido">
+                            <div class="mensaje-no-leido opacity:hover cf">
+                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                                </div>
+                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-29-buscador.jpg" alt="imagen del usuario">
+                                <div class="texto-mensaje">
+                                    <p class=""><span class="type-color-1 light">De: </span>Puntoyseguido</p>
+                                    <p class=" no-margin secondary-subtitle"> <span class="type-color-2">Bienvenido a la comunidad de Puntoyseguido!</span> Aquí encontrarás los mensajes de los creativos que quieren contactar contigo! Así que... estate atento!
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="option-enviado" class="option-enviado">
+                            <div class="mensaje-no-leido opacity:hover cf">
+                                <div class="buscador-cerrar icono cruz-cerrar opacity-hover">
+                                </div>
+                                <img class="imagen-mensaje imagen-redondo" src="imagenes/alumno-29-buscador.jpg" alt="imagen del usuario">
+                                <div class="texto-mensaje">
+                                    <p class=""><span class="type-color-1 light">De: </span>Puntoyseguido</p>
+                                    <p class=" no-margin secondary-subtitle"> <span class="type-color-2">Aún no has enviado ningún mensaje!</span> Esta es una buena ocasión para empezar a contactar con otros creativos!
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </section>
+</div>
+</div>
+</div>
+
+<!--footer -->
+<footer>
+    <div class="pie cf">
+        <section class="mini-box-pie">
+            <span class="type-color-3">Contacto</span>
+            <p class="terms type-color-3">holapuntoyseguido@gmail.com</p>
+            <p class="terms type-color-3">(+34)722 563 505</p>
+        </section>
+        <section class="mini-box-pie">
+            <div class="iconos">
+                <div class="red-social"><a target="blank" href="https://twitter.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/twitter.svg" alt="twitter"></a></div>
+
+                <div class="red-social"><a target="blank" href="https://www.facebook.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/facebook.svg" alt="facebook"></a></div>
+
+                <div class="red-social"><a target="blank" href="https://www.instagram.com/puntoyseguidoo"><img class="icono-pie" src="imagenes/instagram.svg" alt="instagram"></a></div>
+            </div>
+        </section>
+        <section class="mini-box-pie"><span class="type-color-3">Newsletter</span>
+            <div class="newsletter cf">
+                <div class="caja-footer">
+                    <input type="text" id="input-footer" placeholder="ejemplo@gmail.com" name="ejemplo"></div>
+                    <div class="container-unete left">
+                        <button class="button-unete"><a href="graciasnews.html"><span>Únete</span></button>
+                    </div>
+                </div>
+                <p class="terms type-color-3"><a class="type-color-3" href="normasnews.html" target="_blank">Haciendo click aquí aceptas nuestras<span class="underline"> bases y condiciones</span></a></p>
+            </div>
+            <p class="copyright">©2015 puntoyseguido.All rights reserved.</p>
+        </section>
+    </div>
+
+</footer>
+
+<script>
+$('td .icono-tabla-off').click(function() {
+    $(this).hide();
+    $(this).siblings('.icono-tabla-on').css({
+        'display': 'block'
+    });
+});
+$('td .icono-tabla-on').click(function() {
+    $(this).hide();
+    $(this).siblings('.icono-tabla-off').css({
+        'display': 'block'
+    });
+});
+<!--tabla menu -->
+$('.pestanya-2').click(function() {
+    $('.option-1').hide();
+    $('.option-3').hide();
+    $('.option-4').hide();
+    $('.option-5').hide();
+    $('.option-6').hide();
+    $('.option-2').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-2').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-3').click(function() {
+    $('.option-1').hide();
+    $('.option-2').hide();
+    $('.option-4').hide();
+    $('.option-5').hide();
+    $('.option-6').hide();
+    $('.option-3').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-3').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-4').click(function() {
+    $('.option-1').hide();
+    $('.option-3').hide();
+    $('.option-2').hide();
+    $('.option-5').hide();
+    $('.option-6').hide();
+    $('.option-4').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-4').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-5').click(function() {
+    $('.option-1').hide();
+    $('.option-3').hide();
+    $('.option-4').hide();
+    $('.option-2').hide();
+    $('.option-6').hide();
+    $('.option-5').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-5').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-6').click(function() {
+    $('.option-1').hide();
+    $('.option-3').hide();
+    $('.option-4').hide();
+    $('.option-2').hide();
+    $('.option-5').hide();
+    $('.option-6').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-6').addClass('seleccionado');
+    return false;
+});
+$('.pestanya-1').click(function() {
+    $('.option-2').hide();
+    $('.option-3').hide();
+    $('.option-4').hide();
+    $('.option-5').hide();
+    $('.option-6').hide();
+    $('.option-1').show();
+    $('.seleccionado').removeClass('seleccionado');
+    $('.pestanya-1').addClass('seleccionado');
+    return false;
+});
+<!--tabla mensajes -->
+$('.pestanya-m-no-leido').click(function() {
+    $('.option-recibido').hide();
+    $('.option-no-leido').show();
+    $('.option-enviado').hide();
+    $('.seleccionado-m').removeClass('seleccionado-m');
+    $('.pestanya-m-no-leido').addClass('seleccionado-m');
+    return false;
+});
+$('.pestanya-m-enviado').click(function() {
+    $('.option-recibido').hide();
+    $('.option-no-leido').hide();
+    $('.option-enviado').show();
+    $('.seleccionado-m').removeClass('seleccionado-m');
+    $('.pestanya-m-enviado').addClass('seleccionado-m');
+    return false;
+});
+$('.pestanya-m-recibido').click(function() {
+    $('.option-recibido').show();
+    $('.option-no-leido').hide();
+    $('.option-enviado').hide();
+    $('.seleccionado-m').removeClass('seleccionado-m');
+    $('.pestanya-m-recibido').addClass('seleccionado-m');
+    return false;
+});
+<!--abrir y cerrar mensaje -->
+$('#abrir').click(function(e){
+        $('.mensaje-desplegado').show();
+        return false;
+    });
+
+    $('#cerrar').click(function(e){
+        $('.mensaje-desplegado').hide();
+        return false;
+    });
+</script>
+</body>
+</html>
