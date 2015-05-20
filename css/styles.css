@@ -1817,7 +1817,7 @@ header {
   margin: 10px; }
 
 .menu ul {
-  padding-left: 10px; }
+  padding-right: 30px; }
 
 @media screen and (max-width: 1090px) {
   .menu li.tamano_fijo {

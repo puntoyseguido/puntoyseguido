@@ -13,23 +13,22 @@
      <script src="js/filtros.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-63202935-1', 'auto');
+  ga('send', 'pageview');
 
-      ga('create', 'UA-61202468-1', 'auto');
-      ga('send', 'pageview');
-
-  </script>
+</script>
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.2.2/tinysort.min.js"></script>
 </head>
 
 <body>
- <header class="cf">
+<header class="cf">
         <div class="logo">
             <a href="index.html">
                 <span class="icono-redes-an-ampliado img-logo logotipo-pys" alt="Logo"></span>
@@ -40,56 +39,17 @@
                 <ul class="esconder">
                     <li class="tamano_fijo"><a href="anunciosprofes.html" class="uppercase">Encuentra tu curso</a></li>
                     <li class="tamano_fijo"><a href="anuncios.html" class="uppercase">Busca tu alumno</a></li>
-                    <li class="tamano_fijo"><a href="funciona.html" class="uppercase">¿Cómo funciona?</a></li>
+                    <li class="tamano_fijo"><a href="como_funciona.html" class="uppercase">¿Cómo funciona?</a></li>
                 </ul>
             </div>
             <div class="right">
                 <div class="registro">
                     <ul class="esconder">
-                        <li><a href="#login">
-                                <span class="icono-rectangular-grande header-mensajeria" alt="Menu-navegador-desplegable"></span>
-                            </a>
-                        </li>
-                        <li><a href="#registro">Mi perfil</a></li>
+                        <li><a href="#registro">Login</a></li>
                     </ul>
-                </div>
-                <div class="lupa-buscador">
-                    <div class="dropdown__wrap">
-                        <a href="#">
-                            <span class="imagen-desplegable icono-rectangular-grande menu-desplegable" alt="Menu-navegador-desplegable"></span>
-                        </a>
-                        <ul class="dropdown">
-                            <li class="alineacion_vertical">
-                                <a href="#">Encuentra tu curso</a>
-                            </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Busca tu alumno</a>
-                            </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">¿Cómo funciona?</a>
-                            </li>
-                            <li class="alineacion_vertical">
-                                <a href="#">Mi perfil</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a id="abrir-registrado" href="">
-                        <span class="imagen-lupa buscador icono-rectangular-grande" alt="Lupa-buscador"></span>
-                    </a>
                 </div>
             </div>
         </nav>
-        <div class="buscador-desplegado cf">
-            <input type="text" id="input-buscador" placeholder="Busca tu curso o a un creativo" style="background: white" name="buscador">
-            <div class="buscador-container-derecha cf">
-                <div class="container-button-buscador left">
-                    <a class="button-2 full-button-header type-color-3" href="#">Buscar</a>
-                </div>
-                <a id="cerrar-registrado" href="">
-                    <span class="imagen-cerrar-buscador buscador-cerrar icono-rectangular-grande right"  alt="Cerrar-buscador"></span>
-                </a>
-            </div>
-        </div>
     </header>
 
 <div class="cabecera-alumnos cf">
@@ -245,32 +205,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="categorias-2">
-                   <h2 class="secondary-title">Disponibilidad</h2>
-                   <ul class="lista-categorias">
-                    <li class="iconos-cat cf">
-                        <span class="icono left manana icono-margin"></span>
-                        <a class="type-color-5" href=""><p class="categorias-menu">Mañana</p></a>
-                    </li>
-                    <li class="iconos-cat cf">
-                        <span class="icono left tarde icono-margin"></span>
-                        <a class="type-color-5" href=""><p class="categorias-menu">Tarde</p></a>
-                    </li>
-                    <li class="iconos-cat cf">
-                        <span class="icono left noche icono-margin"></span>
-                        <a class="type-color-5" href="">
-                            <p class="categorias-menu">Noche</p></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="categorias-2">
-                <h2 class="secondary-title">Método de clase</h2>
-                <form class="checkbox">
-                    <p class="no-float"><input type="checkbox">Presencial</p>
-                    <p class="no-float"><input type="checkbox">Videollamada</p>
-                    <p class="no-float"><input type="checkbox">E-mail</p>
-                </form>
-            </div>
         </div>
         <div class="todos-anuncios">
             <div class="container-ordenar cf">
