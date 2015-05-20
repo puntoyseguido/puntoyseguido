@@ -352,7 +352,7 @@ ul {
   margin-bottom: 40px;
   text-align: center;
   font-size: 1.1rem;
-  line-height: 1.6rem; }
+  line-height: 1.4rem; }
 
 .titulo-publicar {
   background-color: #ebebeb;
@@ -363,6 +363,9 @@ ul {
 .link-error {
   color: #F15C22;
   text-decoration: underline; }
+
+.boton-raro {
+  width: 200px; }
 
 .todos-anuncios {
   float: right;
