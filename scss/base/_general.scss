@@ -122,3 +122,36 @@ ul {
     padding-left:0;
     //añadido el martes porque petaba todos los ul con un margen raro.
 }
+
+
+// ESTOS SON ESPECIALES PARA ESTA WEB
+.margin-clase {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.margin-clase-grande {
+    font-size: 7rem;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.p-con-margen {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+.titulo-publicar {
+    background-color: rgb(235,235,235);
+    border-radius: 10px;
+    padding: 60px;
+    margin-bottom: 200px;
+}
+
+.link-error {
+    color: #F15C22;
+    text-decoration: underline;
+}

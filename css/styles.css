@@ -338,6 +338,32 @@ body {
 ul {
   padding-left: 0; }
 
+.margin-clase {
+  text-align: center;
+  font-size: 2.5rem; }
+
+.margin-clase-grande {
+  font-size: 7rem;
+  text-align: center;
+  padding-left: 20px; }
+
+.p-con-margen {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6rem; }
+
+.titulo-publicar {
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding: 60px;
+  margin-bottom: 200px; }
+
+.link-error {
+  color: #F15C22;
+  text-decoration: underline; }
+
 .todos-anuncios {
   float: right;
   width: 83%;
@@ -1725,7 +1751,7 @@ anuncios
     margin: 0 auto; }
 
   .cabecera-alumnos {
-    padding-top: 60px;
+    padding-top: 20px;
     width: 70%;
     margin: 0 auto; } }
 @media screen and (min-width: 1118px) {
@@ -1734,8 +1760,8 @@ anuncios
     width: 70%; }
 
   .cabecera-alumnos {
-    padding-top: 60px;
-    width: 50%; } }
+    padding-top: 20px;
+    width: 60%; } }
 @media screen and (max-width: 966px) {
   .filtros {
     display: none; }

@@ -14,32 +14,31 @@ anuncios
 
 ---------*/
 @media screen and (max-width: 1117px){
-         
+
     .cabecera-cursos{
                 padding-top:60px;
                 width: 90%;
                 margin:0 auto;
             }
     .cabecera-alumnos{
-
-                padding-top:60px;
+                padding-top:20px;
                 width: 70%;
                 margin:0 auto;
             }
-           
+
     }
 
 @media screen and (min-width: 1118px) {
-        
+
     .cabecera-cursos{
                     padding-top:60px;
                     width: 70%;
-                   
+
                 }
     .cabecera-alumnos{
-                    padding-top:60px;
-                    width: 50%;
-                  
+                    padding-top:20px;
+                    width: 60%;
+
                 }
 }
 @media screen and (max-width: 966px){
@@ -53,7 +52,7 @@ anuncios
             }
     .row ul{
                 width: 100%;
-                
+
             }
     .filtros-hide-tablet {
                 display: block;
@@ -62,7 +61,7 @@ anuncios
                 .hover-container{
                      display: none;
                 }
-               
+
             }
 }
 
@@ -80,22 +79,22 @@ anuncios
 
 
 @media screen and (max-width: 865px){
-    
+
     .cabecera-cursos{
                     width: 100%;
-                   
+
         }
     .cabecera-alumnos{
                     width: 90%;
-                   
+
         }
     }
 
 @media screen and (max-width: 800px){
-    
+
     .muneco-busqueda{
                 display:none;
-                   
+
         }
     .hide-sub{
 
@@ -120,11 +119,11 @@ anuncios
         }
     .cabecera-cursos{
                 padding-top:0;
-                
+
             }
     .cabecera-alumnos{
                 padding-top:0;
-                
+
             }
 
 
@@ -135,11 +134,11 @@ anuncios
     .ordenar-title {
                 display: none;
         }
-          
+
 }
 @media screen and (max-width: 641px){
 
-    
+
     .image-container{
 
             display: none;
